@@ -16,7 +16,7 @@ namespace NewsFPT.DAL.UnitOfWorks
 
         public UnitOfWork(NewsFPTContext context)
         {
-            _context = context;
+            _context = context;           
         }
         
 

@@ -7,7 +7,6 @@ namespace DAL.Models
     {
         public User()
         {
-            BookMark = new HashSet<BookMark>();
             UserComment = new HashSet<UserComment>();
             UserTag = new HashSet<UserTag>();
         }
@@ -20,7 +19,6 @@ namespace DAL.Models
         public string Password { get; set; }
 
         public virtual Group Group { get; set; }
-        public virtual ICollection<BookMark> BookMark { get; set; }
         public virtual ICollection<UserComment> UserComment { get; set; }
         public virtual ICollection<UserTag> UserTag { get; set; }
     }

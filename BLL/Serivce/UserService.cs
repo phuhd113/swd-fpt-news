@@ -1,4 +1,5 @@
 ﻿using BLL.IService;
+using BLL.ViewModel.UserModels;
 using DAL.Models;
 using NewsFPT.DAL.Repositories;
 using NewsFPT.DAL.UnitOfWork;
@@ -52,6 +53,12 @@ namespace BLL.Serivce
 
 
             }
+            return check;
+        }
+
+        public bool LoginUser(UserForLoginModel user)
+        {
+            var check = _repo.GetAll().Where(x => x.Email == user.Email && x.Password == user.Password && x.IsAdmin == true).Any();
             return check;
         }
 

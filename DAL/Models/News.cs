@@ -7,7 +7,6 @@ namespace DAL.Models
     {
         public News()
         {
-            BookMark = new HashSet<BookMark>();
             NewsTag = new HashSet<NewsTag>();
             UserComment = new HashSet<UserComment>();
         }
@@ -21,7 +20,6 @@ namespace DAL.Models
         public string LinkImage { get; set; }
 
         public virtual Channel Channel { get; set; }
-        public virtual ICollection<BookMark> BookMark { get; set; }
         public virtual ICollection<NewsTag> NewsTag { get; set; }
         public virtual ICollection<UserComment> UserComment { get; set; }
     }

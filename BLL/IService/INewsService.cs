@@ -1,5 +1,5 @@
 ﻿using BLL.Models;
-using BLL.Models.NewsModels;
+using BLL.ViewModel.NewsModels;
 using DAL.Models;
 using System;
 using System.Collections.Generic;
@@ -12,7 +12,7 @@ namespace BLL.IService
     {
         public bool CreateNews(NewsViewModel newsModel);
         public bool DeleteNews(int id);
-        public IQueryable<News> GetAllNews();
+        public IQueryable<NewsViewModel> GetAllNews();
         public News GetNewsById(int id);
         public bool UpdateNews(News news);
         public List<NewsViewModel> SearchNewsByTitle(String title, PagingModel pagingModel);

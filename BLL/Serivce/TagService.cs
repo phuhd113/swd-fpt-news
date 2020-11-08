@@ -1,5 +1,6 @@
 ﻿using BLL.IService;
 using DAL.Models;
+using Microsoft.EntityFrameworkCore;
 using NewsFPT.DAL.Repositories;
 using NewsFPT.DAL.UnitOfWork;
 using System;
@@ -63,11 +64,11 @@ namespace BLL.Serivce
             return false;
         }
 
-        public List<Tag> GetAllTag()
+        public IQueryable<Tag> GetAllTag()
         {
             try
             {
-                return _repo.GetAll().ToList();
+                return _repo.GetAll();
             }
             catch (Exception e)
             {
@@ -93,10 +94,6 @@ namespace BLL.Serivce
             return null;
 
         }
-
-        public bool UpdateTagByID(int id, string tagName)
-        {
-            throw new NotImplementedException();
-        }
+      
     }
 }

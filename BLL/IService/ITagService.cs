@@ -1,6 +1,7 @@
 ﻿using DAL.Models;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace BLL.IService
@@ -10,12 +11,7 @@ namespace BLL.IService
         public bool CreateTag(string tagName);
 
         public bool DeleteTagByID(int id);
-
-        public bool UpdateTagByID(int id, string tagName);
-
-        public List<Tag> GetAllTag();
-
-        public Tag GetTagByID(int id);
+        public IQueryable<Tag> GetAllTag();
 
     }
 }

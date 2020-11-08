@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace BLL.Models.UserModels
+namespace BLL.ViewModel.UserModels
 {
     public class UserForLoginModel
     {

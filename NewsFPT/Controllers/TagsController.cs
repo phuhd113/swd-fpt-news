@@ -13,15 +13,18 @@ namespace NewsFPT.Controllers
     public class TagsController : ControllerBase
     {
         private readonly ITagService _tagService;
+        private readonly INewsTagService _newsTagService;
 
-        public TagsController(ITagService tagService)
+
+        public TagsController(ITagService tagService, INewsTagService newsTagService)
         {
             _tagService = tagService;
+            _newsTagService = newsTagService;
         }
         [HttpPost]
         public IActionResult CreateTag(string tagName)
         {
-            if(tagName != null)
+            if (tagName != null)
             {
                 if (_tagService.CreateTag(tagName))
                 {
@@ -37,7 +40,7 @@ namespace NewsFPT.Controllers
         [HttpDelete("{id}")]
         public IActionResult DeleteTag(int id)
         {
-            if( id != 0)
+            if (id != 0)
             {
                 if (_tagService.DeleteTagByID(id))
                 {
@@ -47,9 +50,40 @@ namespace NewsFPT.Controllers
                 {
                     return BadRequest("Cannot Delete tag");
                 }
-                
+
             }
             return BadRequest("null");
+        }
+
+        [HttpGet("{newsId}")]
+        public IActionResult GetTagsByNewsId(int newsId)
+        {
+            if (newsId != 0)
+            {
+                var tags = _newsTagService.GetTagsByNewsId(newsId).ToList();
+                if (tags.Any())
+                {
+                    return Ok(tags);
+                }
+                else
+                {
+                    return BadRequest(tags);
+                }
+            }
+            return null;
+        }
+        [HttpGet]
+        public IActionResult GetAllTag()
+        {
+            var tags = _tagService.GetAllTag();
+            if (tags.Any())
+            {
+                return Ok(tags);
+            }
+            else
+            {
+                return BadRequest(tags);
+            }
         }
 
     }

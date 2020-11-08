@@ -5727,11 +5727,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\CN9\\SWD\\NewsFPT\\DAL\\DAL.csproj",
+      "projectUniqueName": "F:\\CN9\\SWD\\Hosts\\NewsFPT.Api\\DAL\\DAL.csproj",
       "projectName": "DAL",
-      "projectPath": "F:\\CN9\\SWD\\NewsFPT\\DAL\\DAL.csproj",
+      "projectPath": "F:\\CN9\\SWD\\Hosts\\NewsFPT.Api\\DAL\\DAL.csproj",
       "packagesPath": "C:\\Users\\phuho\\.nuget\\packages\\",
-      "outputPath": "F:\\CN9\\SWD\\NewsFPT\\DAL\\obj\\",
+      "outputPath": "F:\\CN9\\SWD\\Hosts\\NewsFPT.Api\\DAL\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\phuho\\AppData\\Roaming\\NuGet\\NuGet.Config",

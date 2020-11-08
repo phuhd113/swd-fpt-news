@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\CN9\\SWD\\NewsFPT\\BLL\\BLL.csproj": {}
+    "F:\\CN9\\SWD\\Hosts\\NewsFPT.Api\\BLL\\BLL.csproj": {}
   },
   "projects": {
-    "F:\\CN9\\SWD\\NewsFPT\\BLL\\BLL.csproj": {
+    "F:\\CN9\\SWD\\Hosts\\NewsFPT.Api\\BLL\\BLL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\CN9\\SWD\\NewsFPT\\BLL\\BLL.csproj",
+        "projectUniqueName": "F:\\CN9\\SWD\\Hosts\\NewsFPT.Api\\BLL\\BLL.csproj",
         "projectName": "BLL",
-        "projectPath": "F:\\CN9\\SWD\\NewsFPT\\BLL\\BLL.csproj",
+        "projectPath": "F:\\CN9\\SWD\\Hosts\\NewsFPT.Api\\BLL\\BLL.csproj",
         "packagesPath": "C:\\Users\\phuho\\.nuget\\packages\\",
-        "outputPath": "F:\\CN9\\SWD\\NewsFPT\\BLL\\obj\\",
+        "outputPath": "F:\\CN9\\SWD\\Hosts\\NewsFPT.Api\\BLL\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\phuho\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -27,8 +27,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "F:\\CN9\\SWD\\NewsFPT\\DAL\\DAL.csproj": {
-                "projectPath": "F:\\CN9\\SWD\\NewsFPT\\DAL\\DAL.csproj"
+              "F:\\CN9\\SWD\\Hosts\\NewsFPT.Api\\DAL\\DAL.csproj": {
+                "projectPath": "F:\\CN9\\SWD\\Hosts\\NewsFPT.Api\\DAL\\DAL.csproj"
               }
             }
           }
@@ -63,14 +63,14 @@
         }
       }
     },
-    "F:\\CN9\\SWD\\NewsFPT\\DAL\\DAL.csproj": {
+    "F:\\CN9\\SWD\\Hosts\\NewsFPT.Api\\DAL\\DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\CN9\\SWD\\NewsFPT\\DAL\\DAL.csproj",
+        "projectUniqueName": "F:\\CN9\\SWD\\Hosts\\NewsFPT.Api\\DAL\\DAL.csproj",
         "projectName": "DAL",
-        "projectPath": "F:\\CN9\\SWD\\NewsFPT\\DAL\\DAL.csproj",
+        "projectPath": "F:\\CN9\\SWD\\Hosts\\NewsFPT.Api\\DAL\\DAL.csproj",
         "packagesPath": "C:\\Users\\phuho\\.nuget\\packages\\",
-        "outputPath": "F:\\CN9\\SWD\\NewsFPT\\DAL\\obj\\",
+        "outputPath": "F:\\CN9\\SWD\\Hosts\\NewsFPT.Api\\DAL\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\phuho\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "nRNc3Gg8E2sC5UEDTyjGsTbc8SNKTFj/DuZAOfXT91mJwVwIe2f3K2dXcxfD+l8HBZvGeoqBy6rjbnmbTJ8TUg==",
+  "dgSpecHash": "ECKHm6pLEu2QYH5oGQRxuTUQ1yYTrEoYzaFKGwmatm1RoLyI5Z0a3P41LfUVH89vvE4BhmIyEHrOZ+t9b6gEUA==",
   "success": true,
-  "projectFilePath": "F:\\CN9\\SWD\\NewsFPT\\BLL\\BLL.csproj",
+  "projectFilePath": "F:\\CN9\\SWD\\Hosts\\NewsFPT.Api\\BLL\\BLL.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\phuho\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\phuho\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.0\\microsoft.bcl.hashcode.1.1.0.nupkg.sha512",

@@ -15,7 +15,6 @@ namespace DAL.Models
         public bool? IsActive { get; set; }
         public int? GroupId { get; set; }
 
-        public virtual Group Group { get; set; }
         public virtual ICollection<News> News { get; set; }
     }
 }

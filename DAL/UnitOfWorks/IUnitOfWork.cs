@@ -1,4 +1,5 @@
-﻿using NewsFPT.DAL.Repositories;
+﻿using DAL.Models;
+using NewsFPT.DAL.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,5 +13,6 @@ namespace NewsFPT.DAL.UnitOfWork
         // get repository of any model
         public IRepositoryBase<T> GetRepository<T>() where T : class;
         public void Commit();
+
     }
 }

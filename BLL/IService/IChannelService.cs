@@ -1,4 +1,4 @@
-﻿using BLL.Models.ChannelsModel;
+﻿using BLL.ViewModel.ChannelsModel;
 using DAL.Models;
 using System;
 using System.Collections.Generic;

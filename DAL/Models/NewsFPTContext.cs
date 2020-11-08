@@ -15,7 +15,6 @@ namespace DAL.Models
         {
         }
 
-        public virtual DbSet<BookMark> BookMark { get; set; }
         public virtual DbSet<Channel> Channel { get; set; }
         public virtual DbSet<Group> Group { get; set; }
         public virtual DbSet<News> News { get; set; }
@@ -31,33 +30,12 @@ namespace DAL.Models
             if (!optionsBuilder.IsConfigured)
             {
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. See http://go.microsoft.com/fwlink/?LinkId=723263 for guidance on storing connection strings.
-                optionsBuilder.UseSqlServer("Data Source=DESKTOP-MSN9OT3;Initial Catalog=NewsFPT;Persist Security Info=True;User ID=sa;Password=123456789");
+                optionsBuilder.UseSqlServer("Data Source=DESKTOP-MSN9OT3;Initial Catalog=NewsFPT;Persist Security Info=True;User ID=sa;Password=123456789;MultipleActiveResultSets=True");
             }
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<BookMark>(entity =>
-            {
-                entity.HasKey(e => new { e.UserId, e.NewsId });
-
-                entity.Property(e => e.UserId).HasColumnName("userID");
-
-                entity.Property(e => e.NewsId).HasColumnName("newsID");
-
-                entity.HasOne(d => d.News)
-                    .WithMany(p => p.BookMark)
-                    .HasForeignKey(d => d.NewsId)
-                    .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK_BookMark_News");
-
-                entity.HasOne(d => d.User)
-                    .WithMany(p => p.BookMark)
-                    .HasForeignKey(d => d.UserId)
-                    .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK_BookMark_User");
-            });
-
             modelBuilder.Entity<Channel>(entity =>
             {
                 entity.Property(e => e.ChannelId).HasColumnName("channelID");
@@ -69,11 +47,6 @@ namespace DAL.Models
                 entity.Property(e => e.GroupId).HasColumnName("groupID");
 
                 entity.Property(e => e.IsActive).HasColumnName("isActive");
-
-                entity.HasOne(d => d.Group)
-                    .WithMany(p => p.Channel)
-                    .HasForeignKey(d => d.GroupId)
-                    .HasConstraintName("FK_Channel_Group");
             });
 
             modelBuilder.Entity<Group>(entity =>
@@ -104,11 +77,11 @@ namespace DAL.Models
 
                 entity.Property(e => e.NewsContent)
                     .HasColumnName("newsContent")
-                    .HasMaxLength(50);
+                    .HasMaxLength(500);
 
                 entity.Property(e => e.NewsTitle)
                     .HasColumnName("newsTitle")
-                    .HasMaxLength(50);
+                    .HasMaxLength(100);
 
                 entity.HasOne(d => d.Channel)
                     .WithMany(p => p.News)
@@ -124,13 +97,13 @@ namespace DAL.Models
 
                 entity.Property(e => e.NewsId).HasColumnName("newsID");
 
-                entity.HasOne(d => d.Tag)
+                entity.HasOne(d => d.News)
                     .WithMany(p => p.NewsTag)
-                    .HasForeignKey(d => d.TagId)
+                    .HasForeignKey(d => d.NewsId)
                     .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("FK_NewsTag_News");
 
-                entity.HasOne(d => d.TagNavigation)
+                entity.HasOne(d => d.Tag)
                     .WithMany(p => p.NewsTag)
                     .HasForeignKey(d => d.TagId)
                     .OnDelete(DeleteBehavior.ClientSetNull)

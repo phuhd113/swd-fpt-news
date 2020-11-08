@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using BLL.IService;
+using BLL.ViewModel.UserModels;
 using DAL.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -35,6 +36,22 @@ namespace NewsFPT.Controllers
             }
             return Ok(users);
         }
+
+        [HttpPost("LoginAdmin")]
+        public IActionResult LoginUser([FromBody]UserForLoginModel user)
+        {
+            if(user == null)
+            {
+                return BadRequest();
+            }
+            var check = _userService.LoginUser(user);
+            if (!check)
+            {
+                return NotFound();
+            }
+            return Ok();
+        }
+       
 
         [HttpPost]
         public IActionResult CreateUser(User user)

@@ -1,5 +1,5 @@
 ﻿using BLL.IService;
-using BLL.Models.ChannelsModel;
+using BLL.ViewModel.ChannelsModel;
 using DAL.Models;
 using NewsFPT.DAL.Repositories;
 using NewsFPT.DAL.UnitOfWork;
@@ -28,7 +28,6 @@ namespace BLL.Serivce
             {
                 Channel channel = new Channel()
                 {
-                    ChannelId = channelCreateModel.ChannelId,
                     ChannelName = channelCreateModel.ChannelName,
                     IsActive = channelCreateModel.IsActive,
                 };

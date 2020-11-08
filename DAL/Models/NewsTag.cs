@@ -8,7 +8,7 @@ namespace DAL.Models
         public int TagId { get; set; }
         public int NewsId { get; set; }
 
-        public virtual News Tag { get; set; }
-        public virtual Tag TagNavigation { get; set; }
+        public virtual News News { get; set; }
+        public virtual Tag Tag { get; set; }
     }
 }

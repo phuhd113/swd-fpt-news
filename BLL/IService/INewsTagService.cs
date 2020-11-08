@@ -1,4 +1,4 @@
-﻿using BLL.Models.NewsTagModel;
+﻿using BLL.ViewModel.NewsTagModel;
 using DAL.Models;
 using System;
 using System.Collections.Generic;
@@ -9,9 +9,9 @@ namespace BLL.IService
 {
     public interface INewsTagService
     {
-        public IQueryable<NewsTag> GetNewsTag();
-        public NewsTag GetModelsById(int id);
-        public bool DeleteTagNews(int tagId);
-        public bool CreateTagNews(NewsTagModel newsTag);
+        public bool DeleteNewsTag(int tagId);
+        public bool CreateNewsTag(NewsTagModel newsTag);
+
+        public IQueryable<Tag> GetTagsByNewsId(int newsId);    
     }
 }

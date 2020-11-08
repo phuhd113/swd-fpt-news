@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Text;
 
-namespace BLL.Models.UserModels
+namespace BLL.ViewModel.UserModels
 {
     public class UserViewModel
     {

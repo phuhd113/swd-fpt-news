@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using BLL.IService;
-using BLL.Models.NewsModels;
+using BLL.ViewModel.NewsModels;
 using DAL.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -36,7 +36,7 @@ namespace NewsFPT.Controllers
         public IActionResult GetAllNews()
         {
             //Console.WriteLine(ClaimTypes.Role);
-            List<News> news = _newsService.GetAllNews().ToList();
+            List<NewsViewModel> news = _newsService.GetAllNews().ToList();
             if (news == null)
             {
                 return BadRequest("Error");

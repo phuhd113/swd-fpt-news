@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace BLL.Models.NewsModels
+namespace BLL.ViewModel.NewsModels
 {
     public class NewsNotiModel
     {
