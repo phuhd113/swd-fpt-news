@@ -91,6 +91,7 @@ namespace NewsFPT
             services.AddScoped<ITagService, TagService>();
             services.AddScoped<INewsTagService, NewsTagService>();
             services.AddScoped<IChannelService, ChannelService>();
+            services.AddApplicationInsightsTelemetry();
 
 
         }
