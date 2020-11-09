@@ -14,11 +14,9 @@ namespace NewsFPT.Controllers
     [ApiController]
     public class UsersController : ControllerBase
     {
-        private readonly NewsFPTContext _context;
         private readonly IUserService _userService;
-        public UsersController(NewsFPTContext context, IUserService service)
+        public UsersController(IUserService service)
         {
-            _context = context;
             _userService = service;
         }
         [HttpGet]

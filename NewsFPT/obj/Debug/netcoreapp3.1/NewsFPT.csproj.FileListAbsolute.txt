@@ -149,3 +149,8 @@ F:\CN9\SWD\Hosts\NewsFPT.Api\NewsFPT\bin\Debug\netcoreapp3.1\Microsoft.Extension
 F:\CN9\SWD\Hosts\NewsFPT.Api\NewsFPT\obj\Debug\netcoreapp3.1\NewsFPT.csproj.CoreCompileInputs.cache
 F:\CN9\SWD\Hosts\NewsFPT.Api\NewsFPT\obj\Debug\netcoreapp3.1\NewsFPT.MvcApplicationPartsAssemblyInfo.cs
 F:\CN9\SWD\Hosts\NewsFPT.Api\NewsFPT\obj\Debug\netcoreapp3.1\NewsFPT.MvcApplicationPartsAssemblyInfo.cache
+F:\CN9\SWD\Hosts\NewsFPT.Api\NewsFPT\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+F:\CN9\SWD\Hosts\NewsFPT.Api\NewsFPT\bin\Debug\netcoreapp3.1\System.Diagnostics.PerformanceCounter.dll
+F:\CN9\SWD\Hosts\NewsFPT.Api\NewsFPT\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+F:\CN9\SWD\Hosts\NewsFPT.Api\NewsFPT\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Diagnostics.PerformanceCounter.dll
+F:\CN9\SWD\Hosts\NewsFPT.Api\NewsFPT\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll

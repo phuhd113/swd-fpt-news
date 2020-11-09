@@ -21,4 +21,3 @@ F:\CN9\SWD\Hosts\NewsFPT.Api\DAL\obj\Debug\netcoreapp3.1\DAL.csproj.CoreCompileI
 F:\CN9\SWD\Hosts\NewsFPT.Api\DAL\obj\Debug\netcoreapp3.1\DAL.dll
 F:\CN9\SWD\Hosts\NewsFPT.Api\DAL\obj\Debug\netcoreapp3.1\DAL.pdb
 F:\CN9\SWD\Hosts\NewsFPT.Api\DAL\obj\Debug\netcoreapp3.1\DAL.genruntimeconfig.cache
-F:\CN9\SWD\Hosts\NewsFPT.Api\DAL\obj\Debug\netcoreapp3.1\DAL.csprojAssemblyReference.cache
