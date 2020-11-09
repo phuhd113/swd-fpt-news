@@ -1,0 +1,12 @@
+F:\CN9\SWD\Hosts\NewsFPT.Api\BLL\bin\Debug\netcoreapp3.1\win-x64\BLL.deps.json
+F:\CN9\SWD\Hosts\NewsFPT.Api\BLL\bin\Debug\netcoreapp3.1\win-x64\BLL.dll
+F:\CN9\SWD\Hosts\NewsFPT.Api\BLL\bin\Debug\netcoreapp3.1\win-x64\BLL.pdb
+F:\CN9\SWD\Hosts\NewsFPT.Api\BLL\bin\Debug\netcoreapp3.1\win-x64\DAL.dll
+F:\CN9\SWD\Hosts\NewsFPT.Api\BLL\bin\Debug\netcoreapp3.1\win-x64\DAL.pdb
+F:\CN9\SWD\Hosts\NewsFPT.Api\BLL\obj\Debug\netcoreapp3.1\win-x64\BLL.csprojAssemblyReference.cache
+F:\CN9\SWD\Hosts\NewsFPT.Api\BLL\obj\Debug\netcoreapp3.1\win-x64\BLL.AssemblyInfoInputs.cache
+F:\CN9\SWD\Hosts\NewsFPT.Api\BLL\obj\Debug\netcoreapp3.1\win-x64\BLL.AssemblyInfo.cs
+F:\CN9\SWD\Hosts\NewsFPT.Api\BLL\obj\Debug\netcoreapp3.1\win-x64\BLL.csproj.CoreCompileInputs.cache
+F:\CN9\SWD\Hosts\NewsFPT.Api\BLL\obj\Debug\netcoreapp3.1\win-x64\BLL.csproj.CopyComplete
+F:\CN9\SWD\Hosts\NewsFPT.Api\BLL\obj\Debug\netcoreapp3.1\win-x64\BLL.dll
+F:\CN9\SWD\Hosts\NewsFPT.Api\BLL\obj\Debug\netcoreapp3.1\win-x64\BLL.pdb

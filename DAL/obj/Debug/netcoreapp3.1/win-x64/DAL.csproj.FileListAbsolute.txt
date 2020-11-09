@@ -1,0 +1,12 @@
+F:\CN9\SWD\Hosts\NewsFPT.Api\DAL\bin\Debug\netcoreapp3.1\win-x64\DAL.deps.json
+F:\CN9\SWD\Hosts\NewsFPT.Api\DAL\bin\Debug\netcoreapp3.1\win-x64\DAL.runtimeconfig.json
+F:\CN9\SWD\Hosts\NewsFPT.Api\DAL\bin\Debug\netcoreapp3.1\win-x64\DAL.runtimeconfig.dev.json
+F:\CN9\SWD\Hosts\NewsFPT.Api\DAL\bin\Debug\netcoreapp3.1\win-x64\DAL.dll
+F:\CN9\SWD\Hosts\NewsFPT.Api\DAL\bin\Debug\netcoreapp3.1\win-x64\DAL.pdb
+F:\CN9\SWD\Hosts\NewsFPT.Api\DAL\obj\Debug\netcoreapp3.1\win-x64\DAL.csprojAssemblyReference.cache
+F:\CN9\SWD\Hosts\NewsFPT.Api\DAL\obj\Debug\netcoreapp3.1\win-x64\DAL.AssemblyInfoInputs.cache
+F:\CN9\SWD\Hosts\NewsFPT.Api\DAL\obj\Debug\netcoreapp3.1\win-x64\DAL.AssemblyInfo.cs
+F:\CN9\SWD\Hosts\NewsFPT.Api\DAL\obj\Debug\netcoreapp3.1\win-x64\DAL.csproj.CoreCompileInputs.cache
+F:\CN9\SWD\Hosts\NewsFPT.Api\DAL\obj\Debug\netcoreapp3.1\win-x64\DAL.dll
+F:\CN9\SWD\Hosts\NewsFPT.Api\DAL\obj\Debug\netcoreapp3.1\win-x64\DAL.pdb
+F:\CN9\SWD\Hosts\NewsFPT.Api\DAL\obj\Debug\netcoreapp3.1\win-x64\DAL.genruntimeconfig.cache
