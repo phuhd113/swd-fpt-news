@@ -13,7 +13,6 @@ namespace DAL.Models
         public int ChannelId { get; set; }
         public string ChannelName { get; set; }
         public bool? IsActive { get; set; }
-        public int? GroupId { get; set; }
 
         public virtual ICollection<News> News { get; set; }
     }

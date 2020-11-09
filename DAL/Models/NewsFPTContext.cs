@@ -16,10 +16,8 @@ namespace DAL.Models
         }
 
         public virtual DbSet<Channel> Channel { get; set; }
-        public virtual DbSet<Group> Group { get; set; }
         public virtual DbSet<News> News { get; set; }
         public virtual DbSet<NewsTag> NewsTag { get; set; }
-        public virtual DbSet<Subcribe> Subcribe { get; set; }
         public virtual DbSet<Tag> Tag { get; set; }
         public virtual DbSet<User> User { get; set; }
         public virtual DbSet<UserComment> UserComment { get; set; }
@@ -30,7 +28,7 @@ namespace DAL.Models
             if (!optionsBuilder.IsConfigured)
             {
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. See http://go.microsoft.com/fwlink/?LinkId=723263 for guidance on storing connection strings.
-                optionsBuilder.UseSqlServer("Data Source=DESKTOP-MSN9OT3;Initial Catalog=NewsFPT;Persist Security Info=True;User ID=sa;Password=123456789;MultipleActiveResultSets=True");
+                optionsBuilder.UseSqlServer("Server=tcp:mysqlserver113.database.windows.net,1433;Initial Catalog=NewsFPT;Persist Security Info=False;User ID=azureuser;Password=abcd@1234;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;MultipleActiveResultSets=True;");
             }
         }
 
@@ -44,19 +42,7 @@ namespace DAL.Models
                     .HasColumnName("channelName")
                     .HasMaxLength(50);
 
-                entity.Property(e => e.GroupId).HasColumnName("groupID");
-
                 entity.Property(e => e.IsActive).HasColumnName("isActive");
-            });
-
-            modelBuilder.Entity<Group>(entity =>
-            {
-                entity.Property(e => e.GroupId).HasColumnName("groupID");
-
-                entity.Property(e => e.GroupName)
-                    .HasColumnName("groupName")
-                    .HasMaxLength(10)
-                    .IsFixedLength();
             });
 
             modelBuilder.Entity<News>(entity =>
@@ -110,25 +96,6 @@ namespace DAL.Models
                     .HasConstraintName("FK_NewsTag_Tag");
             });
 
-            modelBuilder.Entity<Subcribe>(entity =>
-            {
-                entity.HasNoKey();
-
-                entity.Property(e => e.ChannelId).HasColumnName("channelID");
-
-                entity.Property(e => e.UserId).HasColumnName("userID");
-
-                entity.HasOne(d => d.Channel)
-                    .WithMany()
-                    .HasForeignKey(d => d.ChannelId)
-                    .HasConstraintName("FK_Subcribe_Channel");
-
-                entity.HasOne(d => d.User)
-                    .WithMany()
-                    .HasForeignKey(d => d.UserId)
-                    .HasConstraintName("FK_Subcribe_User");
-            });
-
             modelBuilder.Entity<Tag>(entity =>
             {
                 entity.Property(e => e.TagId).HasColumnName("tagID");
@@ -149,8 +116,6 @@ namespace DAL.Models
                     .HasMaxLength(50)
                     .IsFixedLength();
 
-                entity.Property(e => e.GroupId).HasColumnName("groupID");
-
                 entity.Property(e => e.IsActive).HasColumnName("isActive");
 
                 entity.Property(e => e.IsAdmin).HasColumnName("isAdmin");
@@ -159,11 +124,6 @@ namespace DAL.Models
                     .HasColumnName("password")
                     .HasMaxLength(50)
                     .IsFixedLength();
-
-                entity.HasOne(d => d.Group)
-                    .WithMany(p => p.User)
-                    .HasForeignKey(d => d.GroupId)
-                    .HasConstraintName("FK_User_Group");
             });
 
             modelBuilder.Entity<UserComment>(entity =>

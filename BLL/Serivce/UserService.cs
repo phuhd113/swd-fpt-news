@@ -35,9 +35,7 @@ namespace BLL.Serivce
 
                             Email = userModel.Email,
                             IsAdmin = userModel.IsAdmin,
-                            GroupId = userModel.GroupId,
                             Password = userModel.Password,
-                            Group = userModel.Group,
                             IsActive = true,
                         };
                         _repo.Add(user);

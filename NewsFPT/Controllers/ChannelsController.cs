@@ -75,7 +75,6 @@ namespace NewsFPT.Controllers
             }
             channel1.ChannelName = channel.ChannelName;
             channel1.IsActive = channel.IsActive;
-            channel1.GroupId = channel.GroupId;
             _service.UpdateChannel(channel);
             return Ok("Update Successfully");
         }
